@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it-IT">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:title" content="Benvenuto al sito web di Roberto Polillo!">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.rpolillo.it">
+<meta property="og:description" content="">
+<meta property="og:image" content="http://www.rpolillo.it/wp-content/themes/ocean-mist-2_0/images/default-share.jpg">
+<title>Benvenuto al sito web di Roberto Polillo!</title>
+<link href="http://www.rpolillo.it/wp-content/themes/ocean-mist-2_0/styles/default.css" rel="stylesheet" media="all" type="text/css">
+<link href="http://www.rpolillo.it/wp-content/themes/ocean-mist-2_0/styles/presets.css" rel="stylesheet" media="all" type="text/css">
+<link href="http://www.rpolillo.it/wp-content/themes/ocean-mist-2_0/styles/client.css" rel="stylesheet" media="all" type="text/css">
+<link rel="stylesheet" href="http://www.rpolillo.it/wp-content/themes/ocean-mist-2_0/style.css" type="text/css" media="screen">
+<!--[if IE 7]>
+	<link href="http://www.rpolillo.it/wp-content/themes/ocean-mist-2_0/styles/ie7.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]--><!--[if lt IE 7]>
+	<link href="http://www.rpolillo.it/wp-content/themes/ocean-mist-2_0/styles/ie6.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]--><script src="http://codeorigin.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script><script src="http://www.rpolillo.it/wp-content/themes/ocean-mist-2_0/scripts/oceanmist.js" type="text/javascript"></script><link rel="alternate" type="application/rss+xml" title="Benvenuto al sito web di Roberto Polillo! RSS Feed" href="http://www.rpolillo.it/feed/">
+<link rel="pingback" href="http://www.rpolillo.it/xmlrpc.php">
+<script type="text/javascript">
+
+
+
+		$(document).ready(function() {
+			var distance = $('#menu-collapsed').offset().top,
+			$window = $(window);
+
+			$window.scroll(function() {
+				    if ( $window.scrollTop() >= distance ) {
+				        $('#menu-collapsed').addClass('fixed-to-top');
+				    }
+				    if ( $window.scrollTop() <= distance ) {
+				        $('#menu-collapsed').removeClass('fixed-to-top');
+				    }
+			});
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+			 	$(".mobile-menu").on("click", function(){
+					$("#toggle-menu").slideToggle();
+					$(this).toggleClass("menu-active");
+				});
+				$(".mobile-search").on("click", function(){
+					$("#form-search-mobile").slideToggle();
+					$(this).toggleClass("search-active");
+				});
+				/*
+				$(".translate-menu").on("click", function(){
+					$("#form-translate-mobile").slideToggle();
+					$(this).toggleClass("translate-active");
+				}); */
+
+				$("ul.children").closest("li").addClass('parent');
+				$("li.parent > a").click(function(){
+					$(this).closest("li").find("> ul.children").toggle();
+					return false;
+				});
+				$("li.current_page_item").parents("ul.children").css("display","block");
+				$('input#s').focus(function() {
+			      	$(this).val('');
+			    });
+			    function adjustIframes()
+				{
+					$('iframe').each(function(){
+					var
+					$this = $(this),
+					proportion = $this.data( 'proportion' ),
+					w = $this.attr('width'),
+					actual_w = $this.width();
+					if ( ! proportion )
+					{
+					proportion = $this.attr('height') / w;
+					$this.data( 'proportion', proportion );
+					}
+					if ( actual_w != w )
+					{
+					$this.css( 'height', Math.round( actual_w * proportion ) + 'px' );
+					}
+					});
+				}
+				$(window).on('resize load',adjustIframes);
+			}
+			$('#mainCol .post:first').css('display','block');
+			$('a.show-other').click(function() {
+				$('#mainCol .post:not(:first)').fadeIn();
+				$(this).css('display','none');
+				$('.show-ajax').css('display','block');
+				return false
+			});
+			$( "div[id*='__ss_']" ).removeAttr( "style" );
+
+		});
+	</script><style type="text/css">
+					.no-break br {
+						display: none !important;
+					}
+			</style>
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.rpolillo.it\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.6"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="google-ajax-translation-css" href="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/google-ajax-translation.css?ver=20100412" type="text/css" media="screen">
+<link rel="stylesheet" id="lightbox-css" href="http://www.rpolillo.it/wp-content/plugins/slickr-flickr/lightbox/css/jquery.lightbox-0.5.css?ver=4.2.6" type="text/css" media="all">
+<link rel="stylesheet" id="galleria-css" href="http://www.rpolillo.it/wp-content/plugins/slickr-flickr/galleria/galleria.css?ver=4.2.6" type="text/css" media="all">
+<link rel="stylesheet" id="slickr-flickr-css" href="http://www.rpolillo.it/wp-content/plugins/slickr-flickr/slickr-flickr.css?ver=4.2.6" type="text/css" media="all">
+<link rel="stylesheet" id="pbd-alp-style-css" href="http://www.rpolillo.it/wp-content/plugins/pbd-ajax-load-posts/css/style.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="bbp-default-css" href="http://www.rpolillo.it/wp-content/plugins/bbpress/templates/default/css/bbpress.css?ver=2.5.7-5693" type="text/css" media="screen">
+<script type="text/javascript" src="http://www.rpolillo.it/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script><script>jQueryWP = jQuery;</script><script type="text/javascript" src="http://www.rpolillo.it/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.rpolillo.it/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.rpolillo.it/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 4.2.6">
+<!-- Start Of Script Generated By cforms v11.4 [Oliver Seidel | www.deliciousdays.com] --><link rel="stylesheet" type="text/css" href="http://www.rpolillo.it/wp-content/plugins/cforms/styling/grey_blocks.css">
+<script type="text/javascript" src="http://www.rpolillo.it/wp-content/plugins/cforms/js/cforms.js"></script><!-- End Of Script Generated By cforms --><script type="text/javascript">AC_FL_RunContent = 0;</script><script type="text/javascript" src="http://www.rpolillo.it/wp-content/plugins/dynamic-headers/AC_RunActiveContent.js"></script><script charset="utf-8" type="text/javascript">var switchTo5x=true;</script><script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script charset="utf-8" type="text/javascript">stLight.options({"publisher":"3f042b24-fd8d-42f2-a4f8-e8c1a807816a"});var st_type="wordpress3.6.1";</script><script type="text/javascript">
+   try {
+    smt2.record({ 
+      warn:true, 
+      warnText:"SMT is going to track your cursor activity."
+    });
+  } catch(err) {}
+  </script>
+</head>
+<body class="home blog">
+<div id="center">
+  <div id="container">
+		<div class="rightShade"></div>
+		<div class="leftShade"></div>
+	  <div id="header">
+			<p id="logo"><a href="http://www.rpolillo.it/">Benvenuto al sito web di Roberto Polillo!</a></p>
+			<p id="strapline"></p>
+			 <a href="http://www.rpolillo.it/" title="Benvenuto al sito web di Roberto Polillo!" class="profile-picture">
+			    <img class="avatar mobile" alt="roberto polillo" src="http://www.rpolillo.it/wp-content/themes/ocean-mist-2_0/images/AutoritrattoWebPiccolo.jpg"></a>
+			<h1 class="mobile"><a href="http://www.rpolillo.it/" title="Benvenuto al sito web di Roberto Polillo!">Roberto Polillo</a></h1>
+			<h2 class="mobile">Benvenuti nel mio sito Web</h2>
+		</div>
+		<div id="menu-collapsed" class="mobile">
+				<a href="javascript:void(0)" title="Search" class="mobile-search"><span>Search</span></a>
+				<!--
+				<a href="javascript:void(0)" title="Translate" class="translate-menu">Translate</a>
+				-->
+				<a href="javascript:void(0)" title="Menu" class="mobile-menu"><span>Menu</span></a>
+				<div class="clear"></div>
+				<ul id="toggle-menu">
+<li><a href="../Polillo/Homepage.html">Home</a></li>
+				  <li class="page_item page-item-2"><a href="../Polillo/Chi_sono.html">Chi sono</a></li>
+<li class="page_item page-item-34248 page_item_has_children">
+<a href="../Polillo/Attivita_universitaria.html">Attivit&Atilde;&nbsp; universitaria</a>
+<ul class="children"></ul>
+<div id="form-search-mobile">
+					 <form method="get" id="searchform" action="http://www.rpolillo.it/">
+<fieldset>
+<input type="text" value="Cerca nel sito" name="s" id="s"><input type="image" src="http://www.rpolillo.it/wp-content/themes/ocean-mist-2_0/images/button-search.gif" id="searchsubmit" value="Cerca nel sito" class="desktop"><input type="submit" id="searchsubmit" value="Cerca" class="mobile button-cerca">
+</fieldset>
+</form>				</div>
+				<!--
+								-->
+		</li>
+</ul>
+</div>
+		<div id="social" class="mobile">
+			<ul class="xoxo blogroll">
+<li><a target="_blank" title="Facebook" href="http://www.facebook.com/profile.php?id=1031469125"><img title="Facebook" alt="1- Facebook" src="http://www.rpolillo.it/images/facebook.png"></a></li>
+				<li><a target="_blank" title="Twitter" href="http://twitter.com/robertopolillo"><img title="Twitter" alt="2- Twitter" src="http://www.rpolillo.it/images/twitter.png"></a></li>
+				<li><a target="_blank" title="LinkedIn" href="http://www.linkedin.com/in/robertopolillo"><img title="LinkedIn" alt="3- LinkedIn" src="http://www.rpolillo.it/images/linkedin.png"></a></li>
+				<li><a target="_blank" title="Slideshare" href="http://www.slideshare.net/rpolillo"><img title="Slideshare" alt="4- Slideshare" src="http://www.rpolillo.it/images/slideshare.png"></a></li>
+				<li><a target="_blank" title="You Tube" href="http://www.youtube.com/user/rpolillo?gl=IT&amp;hl=it"><img title="You Tube" alt="5- You Tube" src="http://www.rpolillo.it/images/youtube.png"></a></li>
+				<li><a target="_blank" href="http://pinterest.com/rpolillo/"><img alt="6- Pinterest" src="http://www.rpolillo.it/images/pinterest.png"></a></li>
+				<li class="flickr-one"><a target="_blank" title="Flickr" href="http://www.flickr.com/photos/rpolillo-streetart/"><img title="Flickr" alt="7- Flickr" src="http://www.rpolillo.it/images/flickr-1.png"></a></li>
+				<li class="flickr-two"><a target="_blank" href="http://www.flickr.com/photos/robertopolillo/"><img alt="8- Flickr 2" src="http://www.rpolillo.it/images/flickr-2.png"></a></li>
+				<li class="flickr-three"><a target="_blank" title="Flickr 3" href="http://www.flickr.com/photos/rpolillo/"><img title="Flickr 3" alt="9- Flickr 3" src="http://www.rpolillo.it/images/flickr-3.png"></a></li>
+				<li><a target="_blank" title="RSS" href="http://www.rpolillo.it/test/?feed=rss2"><img title="RSS" alt="RSS" src="http://www.rpolillo.it/images/rss.png"></a></li>
+			</ul>
+</div>
+		<div id="photo">
+		    		    <img title="header.jpg" alt="header.jpg" src="http://www.rpolillo.it/wp-content/header-images/header.jpg"><ul id="nav" class="desktop">
+<li><a href="../Polillo/Homepage.html">Home</a></li>
+			  <li class="page_item page-item-2"><a href="../Polillo/Chi_sono.html">Chi sono</a></li>
+<li class="page_item page-item-34248 page_item_has_children">
+<a href="../Polillo/Attivita_universitaria.html">Attivit&Atilde;&nbsp; universitaria</a>
+
+
+			</li>
+</ul>
+</div>
+		<div id="content">
+
+	<div id="mainCol">
+	<h2 id="pagination-home" class="title"><a href="http://www.rpolillo.it/feed/" class="rss" title="Subscribe to Benvenuto al sito web di Roberto Polillo!">Subscribe to</a></h2>
+
+	
+					<div class="post" id="post-34279">
+				<p class="date">
+				  <span class="d1">30</span>
+					 <span class="d2">dic</span>
+					 <span class="d3">2015</span>
+				</p>
+				<h1>SAVE THE DATE: mia mostra fotografica &ldquo;Visions of Venice&rdquo;</h1>
+				<p class="author">Pubblicato da <span>rpolillo</span>. <span>Commenti disabilitati<span class="screen-reader-text"> su SAVE THE DATE: mia mostra fotografica &ldquo;Visions of Venice&rdquo;</span></span></p>
+				<div class="entry">
+					<div id="content_div-34279">
+<p><a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2015/12/venezia_53C6205-S-copia-21.jpg');" href="http://www.rpolillo.it/wp-content/uploads/2015/12/venezia_53C6205-S-copia-21.jpg"><img class="alignleft size-medium wp-image-34285" src="http://www.rpolillo.it/wp-content/uploads/2015/12/venezia_53C6205-S-copia-21-300x181.jpg" alt="venezia_53C6205-S copia 2" width="300" height="181"></a></p>
+<p>&nbsp;</p>
+<p>Il 22 gennaio 2016 dalle ore 18 alle 21 si inaugura la mia&Acirc;&nbsp;mostra fotografica &ldquo;Visions of Venice&rdquo; ai Tre Oci, sull&rsquo;isola della Giudecca, a Venezia. La mostra sar&Atilde;&nbsp; aperta fino al 28 marzo 2016. Sar&Atilde;&sup2; presente all&rsquo;inaugurazione, siete tutti invitati!</p>
+<p>&nbsp;</p>
+<p>Qui un servizio dell&rsquo;Huffington Post sulla mostra:</p>
+<p>&ldquo;Venezia cos&Atilde;&not; non l&rsquo;avete mai vista. E&rsquo; come un sogno&rdquo;<br>
+http://www.huffingtonpost.it/&acirc;&#128;&brvbar;/roberto-polillo-venezia_n_87&acirc;&#128;&brvbar;<a href="http://www.rpolillo.it/wp-content/uploads/2015/12/venezia_53C6205-S-copia-2.jpg"><br></a><a href="http://www.rpolillo.it/wp-content/uploads/2015/12/venezia_53C6205-S-copia-2.jpg"><br></a><a href="http://www.rpolillo.it/wp-content/uploads/2015/12/venezia_53C6205-S-copia-2.jpg"><br></a></p>
+<p class="no-break"></p>
+<div class="share-buttons">
+<span class="st_facebook_hcount" st_title="SAVE THE DATE: mia mostra fotografica &ldquo;Visions of Venice&rdquo;" st_url="http://www.rpolillo.it/blog/2015/12/save-the-date-mia-mostra-fotografica-visions-of-venice/"></span>
+<span st_via="robertopolillo" class="st_twitter_hcount" st_title="SAVE THE DATE: mia mostra fotografica &ldquo;Visions of Venice&rdquo;" st_url="http://www.rpolillo.it/blog/2015/12/save-the-date-mia-mostra-fotografica-visions-of-venice/"></span>
+<span class="st_linkedin_hcount" st_title="SAVE THE DATE: mia mostra fotografica &ldquo;Visions of Venice&rdquo;" st_url="http://www.rpolillo.it/blog/2015/12/save-the-date-mia-mostra-fotografica-visions-of-venice/"></span>
+<span class="st_email_hcount" st_title="SAVE THE DATE: mia mostra fotografica &ldquo;Visions of Venice&rdquo;" st_url="http://www.rpolillo.it/blog/2015/12/save-the-date-mia-mostra-fotografica-visions-of-venice/"></span>
+<span class="st_pinterest_hcount" st_title="SAVE THE DATE: mia mostra fotografica &ldquo;Visions of Venice&rdquo;" st_url="http://www.rpolillo.it/blog/2015/12/save-the-date-mia-mostra-fotografica-visions-of-venice/"></span>
+<span class="st_sharethis_hcount" st_title="SAVE THE DATE: mia mostra fotografica &ldquo;Visions of Venice&rdquo;" st_url="http://www.rpolillo.it/blog/2015/12/save-the-date-mia-mostra-fotografica-visions-of-venice/"></span>
+</div>
+</div>
+<div class="translate_block" style="display: none;">
+<a class="translate_translate" id="translate_button_post-34279" lang="it" xml:lang="it" href="javascript:show_translate_popup('it',%20'post',%2034279);">[Traduttore]</a><img src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" id="translate_loading_post-34279" class="translate_loading" style="display: none;" width="16" height="16" alt="">
+</div>
+				</div>
+							</div>
+					<div class="post" id="post-34190">
+				<p class="date">
+				  <span class="d1">13</span>
+					 <span class="d2">ott</span>
+					 <span class="d3">2015</span>
+				</p>
+				<h1>Teaching HCI to undergraduate computing students: some considerations</h1>
+				<p class="author">Pubblicato da <span>rpolillo</span>. <span>Commenti disabilitati<span class="screen-reader-text"> su Teaching HCI to undergraduate computing students: some considerations</span></span></p>
+				<div class="entry">
+					<div id="content_div-34190">
+<p>Slides del mio intervento al workshop su &ldquo;New perspectives to improve quality, efficacy and appeal of HCI courses&rdquo;, alla HCITALY Conference, Roma, La Sapienza, 28 settembre 2015:</p>
+<p><iframe src="http://www.slideshare.net/rpolillo/slideshelf" width="490px" height="470px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></p>
+<p class="no-break"></p>
+<div class="share-buttons">
+<span class="st_facebook_hcount" st_title="Teaching HCI to undergraduate computing students: some considerations" st_url="http://www.rpolillo.it/blog/2015/10/teaching-hci-to-undergraduate-computing-students-some-considerations/"></span>
+<span st_via="robertopolillo" class="st_twitter_hcount" st_title="Teaching HCI to undergraduate computing students: some considerations" st_url="http://www.rpolillo.it/blog/2015/10/teaching-hci-to-undergraduate-computing-students-some-considerations/"></span>
+<span class="st_linkedin_hcount" st_title="Teaching HCI to undergraduate computing students: some considerations" st_url="http://www.rpolillo.it/blog/2015/10/teaching-hci-to-undergraduate-computing-students-some-considerations/"></span>
+<span class="st_email_hcount" st_title="Teaching HCI to undergraduate computing students: some considerations" st_url="http://www.rpolillo.it/blog/2015/10/teaching-hci-to-undergraduate-computing-students-some-considerations/"></span>
+<span class="st_pinterest_hcount" st_title="Teaching HCI to undergraduate computing students: some considerations" st_url="http://www.rpolillo.it/blog/2015/10/teaching-hci-to-undergraduate-computing-students-some-considerations/"></span>
+<span class="st_sharethis_hcount" st_title="Teaching HCI to undergraduate computing students: some considerations" st_url="http://www.rpolillo.it/blog/2015/10/teaching-hci-to-undergraduate-computing-students-some-considerations/"></span>
+</div>
+</div>
+<div class="translate_block" style="display: none;">
+<a class="translate_translate" id="translate_button_post-34190" lang="it" xml:lang="it" href="javascript:show_translate_popup('it',%20'post',%2034190);">[Traduttore]</a><img src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" id="translate_loading_post-34190" class="translate_loading" style="display: none;" width="16" height="16" alt="">
+</div>
+				</div>
+							</div>
+					
+					<div class="post" id="post-34042">
+				<p class="date">
+				  <span class="d1">4</span>
+					 <span class="d2">apr</span>
+					 <span class="d3">2015</span>
+				</p>
+				<h1>SAVE THE DATE: Espongo altre mie foto al MIA Fair 2015 (Milano, 11-13 aprile)</h1>
+				<p class="author">Pubblicato da <span>rpolillo</span>. <a href="http://www.rpolillo.it/blog/2015/04/save-the-date-espongo-altre-mie-foto-al-mia-fair-2015-milano-11-13-aprile/#respond">No Comments</a></p>
+				<div class="entry">
+					<div id="content_div-34042">
+<p>Al MIA Fair di Milano, dall&rsquo;11 al 13 aprile (http://www.miafair.it/milano/), nella sezione &ldquo;Proposta MIA&rdquo; (<strong>Stand 64, corridoio A</strong>) espongo due serie di immagini: una selezione di mie foto &ldquo;antiche&rdquo; di maestri del jazz degli anni &rsquo;60, e alcune foto recenti, una selezione di una mostra che sto preparando su Venezia. Queste <a onclick="javascript:pageTracker._trackPageview('/outgoing/milano.repubblica.it/cronaca/2015/04/02/foto/venezia-111010105/?fb_action_ids=10205356627048437&amp;fb_action_types=og.shares#1');" href="http://milano.repubblica.it/cronaca/2015/04/02/foto/venezia-111010105/?fb_action_ids=10205356627048437&amp;fb_action_types=og.shares#1" target="_blank">le vedetta anche qui</a>.</p>
+<p>Qui sotto: il ponte dei Sospiri e Thelonious Monk con la moglie Nellie (a Milano, nel 1964!).</p>
+<p><a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2015/04/53C3157LimEd.jpg');" href="http://www.rpolillo.it/wp-content/uploads/2015/04/53C3157LimEd.jpg"><img class="alignleft size-medium wp-image-34043" alt="_53C3157LimEd" src="http://www.rpolillo.it/wp-content/uploads/2015/04/53C3157LimEd-300x200.jpg" width="300" height="200"></a></p>
+<p><a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2015/04/TeloniousMoglie.jpg');" href="http://www.rpolillo.it/wp-content/uploads/2015/04/TeloniousMoglie.jpg"><img class="aligncenter size-medium wp-image-34045" alt="TeloniousMoglie" src="http://www.rpolillo.it/wp-content/uploads/2015/04/TeloniousMoglie-300x207.jpg" width="300" height="207"></a></p>
+<p class="no-break"></p>
+<div class="share-buttons">
+<span class="st_facebook_hcount" st_title="SAVE THE DATE: Espongo altre mie foto al MIA Fair 2015 (Milano, 11-13 aprile)" st_url="http://www.rpolillo.it/blog/2015/04/save-the-date-espongo-altre-mie-foto-al-mia-fair-2015-milano-11-13-aprile/"></span>
+<span st_via="robertopolillo" class="st_twitter_hcount" st_title="SAVE THE DATE: Espongo altre mie foto al MIA Fair 2015 (Milano, 11-13 aprile)" st_url="http://www.rpolillo.it/blog/2015/04/save-the-date-espongo-altre-mie-foto-al-mia-fair-2015-milano-11-13-aprile/"></span>
+<span class="st_linkedin_hcount" st_title="SAVE THE DATE: Espongo altre mie foto al MIA Fair 2015 (Milano, 11-13 aprile)" st_url="http://www.rpolillo.it/blog/2015/04/save-the-date-espongo-altre-mie-foto-al-mia-fair-2015-milano-11-13-aprile/"></span>
+<span class="st_email_hcount" st_title="SAVE THE DATE: Espongo altre mie foto al MIA Fair 2015 (Milano, 11-13 aprile)" st_url="http://www.rpolillo.it/blog/2015/04/save-the-date-espongo-altre-mie-foto-al-mia-fair-2015-milano-11-13-aprile/"></span>
+<span class="st_pinterest_hcount" st_title="SAVE THE DATE: Espongo altre mie foto al MIA Fair 2015 (Milano, 11-13 aprile)" st_url="http://www.rpolillo.it/blog/2015/04/save-the-date-espongo-altre-mie-foto-al-mia-fair-2015-milano-11-13-aprile/"></span>
+<span class="st_sharethis_hcount" st_title="SAVE THE DATE: Espongo altre mie foto al MIA Fair 2015 (Milano, 11-13 aprile)" st_url="http://www.rpolillo.it/blog/2015/04/save-the-date-espongo-altre-mie-foto-al-mia-fair-2015-milano-11-13-aprile/"></span>
+</div>
+</div>
+<div class="translate_block" style="display: none;">
+<a class="translate_translate" id="translate_button_post-34042" lang="it" xml:lang="it" href="javascript:show_translate_popup('it',%20'post',%2034042);">[Traduttore]</a><img src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" id="translate_loading_post-34042" class="translate_loading" style="display: none;" width="16" height="16" alt="">
+</div>
+				</div>
+							</div>
+					
+					
+					<div class="post" id="post-34016">
+				<p class="date">
+				  <span class="d1">13</span>
+					 <span class="d2">mar</span>
+					 <span class="d3">2015</span>
+				</p>
+				<h1>SAVE THE DATE: Espongo mie foto all&rsquo;Affordable Art Fair, 19-22 marzo, Superstudio (Milano)</h1>
+				<p class="author">Pubblicato da <span>rpolillo</span>. <a href="http://www.rpolillo.it/blog/2015/03/save-the-date-espongo-mie-foto-allaffordable-art-fair-19-22-marzo-superstudio-milano/#respond">No Comments</a></p>
+				<div class="entry">
+					<div id="content_div-34016">
+<p>Sar&Atilde;&sup2; presente all&rsquo;Affordable Art Fair con una quindicina di foto &ldquo;impressioniste&rdquo;, attraverso la Galleria SpazioFarini6. Venite a trovarmi!</p>
+<div id="attachment_34017" style="width: 310px" class="wp-caption alignleft">
+<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2015/03/Haridwar.jpg');" href="http://www.rpolillo.it/wp-content/uploads/2015/03/Haridwar.jpg"><img class="size-medium wp-image-34017 " alt=" Il tempio sul Gange" src="http://www.rpolillo.it/wp-content/uploads/2015/03/Haridwar-300x200.jpg" width="300" height="200"></a><p class="wp-caption-text">Haridwar (India, 2013) &ndash; Il tempio sul Gange</p>
+</div>
+<p>&nbsp;</p>
+<p class="no-break"></p>
+<div class="share-buttons">
+<span class="st_facebook_hcount" st_title="SAVE THE DATE: Espongo mie foto all&rsquo;Affordable Art Fair, 19-22 marzo, Superstudio (Milano)" st_url="http://www.rpolillo.it/blog/2015/03/save-the-date-espongo-mie-foto-allaffordable-art-fair-19-22-marzo-superstudio-milano/"></span>
+<span st_via="robertopolillo" class="st_twitter_hcount" st_title="SAVE THE DATE: Espongo mie foto all&rsquo;Affordable Art Fair, 19-22 marzo, Superstudio (Milano)" st_url="http://www.rpolillo.it/blog/2015/03/save-the-date-espongo-mie-foto-allaffordable-art-fair-19-22-marzo-superstudio-milano/"></span>
+<span class="st_linkedin_hcount" st_title="SAVE THE DATE: Espongo mie foto all&rsquo;Affordable Art Fair, 19-22 marzo, Superstudio (Milano)" st_url="http://www.rpolillo.it/blog/2015/03/save-the-date-espongo-mie-foto-allaffordable-art-fair-19-22-marzo-superstudio-milano/"></span>
+<span class="st_email_hcount" st_title="SAVE THE DATE: Espongo mie foto all&rsquo;Affordable Art Fair, 19-22 marzo, Superstudio (Milano)" st_url="http://www.rpolillo.it/blog/2015/03/save-the-date-espongo-mie-foto-allaffordable-art-fair-19-22-marzo-superstudio-milano/"></span>
+<span class="st_pinterest_hcount" st_title="SAVE THE DATE: Espongo mie foto all&rsquo;Affordable Art Fair, 19-22 marzo, Superstudio (Milano)" st_url="http://www.rpolillo.it/blog/2015/03/save-the-date-espongo-mie-foto-allaffordable-art-fair-19-22-marzo-superstudio-milano/"></span>
+<span class="st_sharethis_hcount" st_title="SAVE THE DATE: Espongo mie foto all&rsquo;Affordable Art Fair, 19-22 marzo, Superstudio (Milano)" st_url="http://www.rpolillo.it/blog/2015/03/save-the-date-espongo-mie-foto-allaffordable-art-fair-19-22-marzo-superstudio-milano/"></span>
+</div>
+</div>
+<div class="translate_block" style="display: none;">
+<a class="translate_translate" id="translate_button_post-34016" lang="it" xml:lang="it" href="javascript:show_translate_popup('it',%20'post',%2034016);">[Traduttore]</a><img src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" id="translate_loading_post-34016" class="translate_loading" style="display: none;" width="16" height="16" alt="">
+</div>
+				</div>
+							</div>
+					
+					<div class="post" id="post-33893">
+				<p class="date">
+				  <span class="d1">9</span>
+					 <span class="d2">lug</span>
+					 <span class="d3">2014</span>
+				</p>
+				<h1>Ciao Patricia (26 giugno 2014)</h1>
+				<p class="author">Pubblicato da <span>rpolillo</span>. <a href="http://www.rpolillo.it/blog/2014/07/ciao-patricia-26-giugno-2014/#respond">No Comments</a></p>
+				<div class="entry">
+					<div id="content_div-33893">
+<p><a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2014/07/rose.jpg');" href="http://www.rpolillo.it/wp-content/uploads/2014/07/rose.jpg"><img class="aligncenter size-medium wp-image-33894" alt="rose" src="http://www.rpolillo.it/wp-content/uploads/2014/07/rose-300x111.jpg" width="300" height="111"></a></p>
+<p class="no-break"></p>
+<div class="share-buttons">
+<span class="st_facebook_hcount" st_title="Ciao Patricia (26 giugno 2014)" st_url="http://www.rpolillo.it/blog/2014/07/ciao-patricia-26-giugno-2014/"></span>
+<span st_via="robertopolillo" class="st_twitter_hcount" st_title="Ciao Patricia (26 giugno 2014)" st_url="http://www.rpolillo.it/blog/2014/07/ciao-patricia-26-giugno-2014/"></span>
+<span class="st_linkedin_hcount" st_title="Ciao Patricia (26 giugno 2014)" st_url="http://www.rpolillo.it/blog/2014/07/ciao-patricia-26-giugno-2014/"></span>
+<span class="st_email_hcount" st_title="Ciao Patricia (26 giugno 2014)" st_url="http://www.rpolillo.it/blog/2014/07/ciao-patricia-26-giugno-2014/"></span>
+<span class="st_pinterest_hcount" st_title="Ciao Patricia (26 giugno 2014)" st_url="http://www.rpolillo.it/blog/2014/07/ciao-patricia-26-giugno-2014/"></span>
+<span class="st_sharethis_hcount" st_title="Ciao Patricia (26 giugno 2014)" st_url="http://www.rpolillo.it/blog/2014/07/ciao-patricia-26-giugno-2014/"></span>
+</div>
+</div>
+<div class="translate_block" style="display: none;">
+<a class="translate_translate" id="translate_button_post-33893" lang="it" xml:lang="it" href="javascript:show_translate_popup('it',%20'post',%2033893);">[Traduttore]</a><img src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" id="translate_loading_post-33893" class="translate_loading" style="display: none;" width="16" height="16" alt="">
+</div>
+				</div>
+							</div>
+		
+	
+	
+
+	</div>
+
+	<div id="subCol">
+		<ul>
+<!--    <li>
+			  <h2>CERCA NEL SITO</h2>
+          <div class="pad">
+						<select name="archivemenu" onchange="document.location.href=this.options[this.selectedIndex].value;">
+          		<option value="">Archivio Mensile</option>
+								<option value='http://www.rpolillo.it/blog/2015/12/'> dicembre 2015 </option>
+	<option value='http://www.rpolillo.it/blog/2015/10/'> ottobre 2015 </option>
+	<option value='http://www.rpolillo.it/blog/2015/05/'> maggio 2015 </option>
+	<option value='http://www.rpolillo.it/blog/2015/04/'> aprile 2015 </option>
+	<option value='http://www.rpolillo.it/blog/2015/03/'> marzo 2015 </option>
+	<option value='http://www.rpolillo.it/blog/2014/12/'> dicembre 2014 </option>
+	<option value='http://www.rpolillo.it/blog/2014/07/'> luglio 2014 </option>
+	<option value='http://www.rpolillo.it/blog/2014/06/'> giugno 2014 </option>
+	<option value='http://www.rpolillo.it/blog/2014/05/'> maggio 2014 </option>
+	<option value='http://www.rpolillo.it/blog/2014/04/'> aprile 2014 </option>
+	<option value='http://www.rpolillo.it/blog/2014/03/'> marzo 2014 </option>
+	<option value='http://www.rpolillo.it/blog/2014/01/'> gennaio 2014 </option>
+	<option value='http://www.rpolillo.it/blog/2013/12/'> dicembre 2013 </option>
+	<option value='http://www.rpolillo.it/blog/2013/11/'> novembre 2013 </option>
+	<option value='http://www.rpolillo.it/blog/2013/10/'> ottobre 2013 </option>
+	<option value='http://www.rpolillo.it/blog/2013/04/'> aprile 2013 </option>
+	<option value='http://www.rpolillo.it/blog/2013/03/'> marzo 2013 </option>
+	<option value='http://www.rpolillo.it/blog/2013/02/'> febbraio 2013 </option>
+	<option value='http://www.rpolillo.it/blog/2013/01/'> gennaio 2013 </option>
+	<option value='http://www.rpolillo.it/blog/2012/11/'> novembre 2012 </option>
+	<option value='http://www.rpolillo.it/blog/2012/07/'> luglio 2012 </option>
+	<option value='http://www.rpolillo.it/blog/2012/06/'> giugno 2012 </option>
+	<option value='http://www.rpolillo.it/blog/2012/05/'> maggio 2012 </option>
+	<option value='http://www.rpolillo.it/blog/2012/04/'> aprile 2012 </option>
+	<option value='http://www.rpolillo.it/blog/2012/03/'> marzo 2012 </option>
+	<option value='http://www.rpolillo.it/blog/2012/02/'> febbraio 2012 </option>
+	<option value='http://www.rpolillo.it/blog/2011/12/'> dicembre 2011 </option>
+	<option value='http://www.rpolillo.it/blog/2011/11/'> novembre 2011 </option>
+	<option value='http://www.rpolillo.it/blog/2011/10/'> ottobre 2011 </option>
+	<option value='http://www.rpolillo.it/blog/2011/09/'> settembre 2011 </option>
+	<option value='http://www.rpolillo.it/blog/2011/06/'> giugno 2011 </option>
+	<option value='http://www.rpolillo.it/blog/2011/05/'> maggio 2011 </option>
+	<option value='http://www.rpolillo.it/blog/2011/03/'> marzo 2011 </option>
+	<option value='http://www.rpolillo.it/blog/2011/02/'> febbraio 2011 </option>
+	<option value='http://www.rpolillo.it/blog/2011/01/'> gennaio 2011 </option>
+	<option value='http://www.rpolillo.it/blog/2010/12/'> dicembre 2010 </option>
+	<option value='http://www.rpolillo.it/blog/2010/11/'> novembre 2010 </option>
+	<option value='http://www.rpolillo.it/blog/2010/10/'> ottobre 2010 </option>
+	<option value='http://www.rpolillo.it/blog/2010/09/'> settembre 2010 </option>
+	<option value='http://www.rpolillo.it/blog/2010/06/'> giugno 2010 </option>
+	<option value='http://www.rpolillo.it/blog/2010/05/'> maggio 2010 </option>
+	<option value='http://www.rpolillo.it/blog/2010/04/'> aprile 2010 </option>
+	<option value='http://www.rpolillo.it/blog/2010/03/'> marzo 2010 </option>
+        		</select>
+						<div class="or"><span>oppure</span></div>
+						<form method="get" id="searchform" action="http://www.rpolillo.it/">
+<fieldset><input type="text" value="Cerca nel sito" name="s" id="s" />
+<input type="image" src="http://www.rpolillo.it/wp-content/themes/ocean-mist-2_0/images/button-search.gif" id="searchsubmit" value="Cerca nel sito" class="desktop" />
+<input type="submit" id="searchsubmit" value="Cerca" class="mobile button-cerca" />
+</fieldset>
+</form>          </div>
+      </li>  --><!-- Adverts are disabled per default. Uncomment & insert ad code if you want to use them.
+
+
+			// TEXT ADS
+
+			<li>
+			  <h2>Text Links Advertisements</h2>
+			  <ul>
+			    <li><a href="#">Advert title</a></li>
+			    <li><a href="#">Advert title</a></li>
+			  </ul>
+			</li>
+
+
+			// IMAGE ADS (maximum width 154px)
+
+			<li>
+			  <h2>Image Advertisements</h2>
+			  <ul>
+			    <li><a href="#"><img src="yourdomain.com/img/ad01.gif" alt="Advert for: describe the service offered" /></a></li>
+			    <li><a href="#"><img src="yourdomain.com/img/ad02.gif" alt="Advert for: describe the service offered" /></a></li>
+			  </ul>
+			</li>
+
+
+			--><!-- Author information is disabled per default. Uncomment and fill in your details if you want to use it.
+			<li><h2>Author</h2>
+			<p>A little something about you, the author. Nothing lengthy, just an overview.</p>
+			</li>
+			--><li id="text-7" class="widget widget_text">
+<h2 class="widgettitle">QUESTO SITO</h2>			<div class="textwidget">Nei post a lato trovate i miei interventi extra-universitari. Per le slides dei miei corsi universitari guardate nelle sezioni apposite.</div>
+		</li>
+<li id="linkcat-5" class="widget widget_links">
+<h2 class="widgettitle">SONO ANCHE QUI</h2>
+	<ul class="xoxo blogroll">
+<li><a href="http://rpolillo.photoshelter.com/#!/index" title="Roberto Polillo Photography" target="_blank"><img src="http://www.rpolillo.it/wp-content/uploads/2015/05/banner-photo.jpg" alt="0 &ndash; Roberto Polillo Photo" title="Roberto Polillo Photography"></a></li>
+<li><a href="http://www.facebook.com/profile.php?id=1031469125" title="Facebook" target="_blank"><img src="http://www.rpolillo.it/images/facebook.png" alt="1- Facebook" title="Facebook"></a></li>
+<li><a href="http://twitter.com/robertopolillo" title="Twitter" target="_blank"><img src="http://www.rpolillo.it/images/twitter.png" alt="2- Twitter" title="Twitter"></a></li>
+<li><a href="http://www.linkedin.com/in/robertopolillo" title="LinkedIn" target="_blank"><img src="http://www.rpolillo.it/images/linkedin.png" alt="3- LinkedIn" title="LinkedIn"></a></li>
+<li><a href="http://www.slideshare.net/rpolillo" title="Slideshare" target="_blank"><img src="http://www.rpolillo.it/images/slideshare.png" alt="4- Slideshare" title="Slideshare"></a></li>
+<li><a href="http://www.youtube.com/user/rpolillo?gl=IT&amp;hl=it" title="You Tube" target="_blank"><img src="http://www.rpolillo.it/images/youtube.png" alt="5- You Tube" title="You Tube"></a></li>
+<li><a href="http://pinterest.com/rpolillo/" target="_blank"><img src="http://www.rpolillo.it/images/pinterest.png" alt="6- Pinterest"></a></li>
+<li><a href="http://www.flickr.com/photos/rpolillo-streetart/" title="Flickr" target="_blank"><img src="http://www.rpolillo.it/images/flickr-1.png" alt="7- Flickr" title="Flickr"></a></li>
+<li><a href="http://www.flickr.com/photos/robertopolillo/" target="_blank"><img src="http://www.rpolillo.it/images/flickr-2.png" alt="8- Flickr 2"></a></li>
+<li><a href="http://www.flickr.com/photos/rpolillo/" title="Flickr 3" target="_blank"><img src="http://www.rpolillo.it/images/flickr-3.png" alt="9- Flickr 3" title="Flickr 3"></a></li>
+
+	</ul>
+</li>
+<li id="google-translator" class="widget widget_google_translate">
+<h2 class="widgettitle">TRADUTTORE</h2>
+<div id="widget_google_translate">
+<ul></ul>
+<form action="http://translate.google.com/translate">
+<input name="u" id="url" value="http://www.rpolillo.it/" type="hidden">Translate from:<br><select name="sl" style="width:auto"><option value="ar">Arabic</option>
+<option value="bg">Bulgarian</option>
+<option value="ca">Catalan</option>
+<option value="zh-CN">Chinese (Simplified)</option>
+<option value="zh-TW">Chinese (Traditional)</option>
+<option value="hr">Croatian</option>
+<option value="cs">Czech</option>
+<option value="da">Danish</option>
+<option value="nl">Dutch</option>
+<option value="en">English</option>
+<option value="tl">Filipino</option>
+<option value="fi">Finnish</option>
+<option value="fr">French</option>
+<option value="de">German</option>
+<option value="el">Greek</option>
+<option value="iw">Hebrew</option>
+<option value="hi">Hindi</option>
+<option value="id">Indonesian</option>
+<option value="it" selected>Italian</option>
+<option value="ja">Japanese</option>
+<option value="ko">Korean</option>
+<option value="lv">Latvian</option>
+<option value="lt">Lithuanian</option>
+<option value="no">Norwegian</option>
+<option value="pl">Polish</option>
+<option value="pt">Portuguese</option>
+<option value="ro">Romanian</option>
+<option value="ru">Russian</option>
+<option value="sr">Serbian</option>
+<option value="sk">Slovak</option>
+<option value="sl">Slovenian</option>
+<option value="es">Spanish</option>
+<option value="sv">Swedish</option>
+<option value="uk">Ukrainian</option>
+<option value="vi">Vietnamese</option></select><br>Translate to:<br><select name="tl" style="width:auto"><option value="ar">Arabic</option>
+<option value="bg">Bulgarian</option>
+<option value="ca">Catalan</option>
+<option value="zh-CN">Chinese (Simplified)</option>
+<option value="zh-TW">Chinese (Traditional)</option>
+<option value="hr">Croatian</option>
+<option value="cs">Czech</option>
+<option value="da">Danish</option>
+<option value="nl">Dutch</option>
+<option value="en" selected>English</option>
+<option value="tl">Filipino</option>
+<option value="fi">Finnish</option>
+<option value="fr">French</option>
+<option value="de">German</option>
+<option value="el">Greek</option>
+<option value="iw">Hebrew</option>
+<option value="hi">Hindi</option>
+<option value="id">Indonesian</option>
+<option value="it">Italian</option>
+<option value="ja">Japanese</option>
+<option value="ko">Korean</option>
+<option value="lv">Latvian</option>
+<option value="lt">Lithuanian</option>
+<option value="no">Norwegian</option>
+<option value="pl">Polish</option>
+<option value="pt">Portuguese</option>
+<option value="ro">Romanian</option>
+<option value="ru">Russian</option>
+<option value="sr">Serbian</option>
+<option value="sk">Slovak</option>
+<option value="sl">Slovenian</option>
+<option value="es">Spanish</option>
+<option value="sv">Swedish</option>
+<option value="uk">Ukrainian</option>
+<option value="vi">Vietnamese</option></select><br><input name="hl" value="en" type="hidden"><input name="ie" value="UTF-8" type="hidden"><script type="text/javascript">
+		var thestr = window.location.href;
+		var mystrlen = 22;
+		var sresult = thestr.indexOf( "www.rpolillo.it" );
+		if( sresult == -1 || sresult >= mystrlen) {
+			document.write( '<input value="Translate" type="submit" disabled /> ' );
+			document.write( '<a href="" target="_top" >return to original' );
+		}else{
+			document.write( '<input value="Translate" type="submit" />' );
+		}
+		</script>
+</form>
+<div class="google_translate_footer" style="text-align:right; font-size:9px;color: #888;">Powered by <a href="http://translate.google.com/" target="_blank">Google Translate</a>.</div>
+</div>
+</li>
+<li id="text-3" class="widget widget_text">
+<h2 class="widgettitle">Il mio libro &ldquo;Il non profit sul Web&rdquo;</h2>			<div class="textwidget">
+<a href="http://www.rpolillo.it/libri/il-non-profit-sul-web-indice-del-libro/" title="Di che cosa si tratta?"><img src="http://www.rpolillo.it/wp-content/uploads/2014/05/CopertinaLibroWebPiccola-215x300.jpg" alt="Copertina Libro Il non profit sul Web" width="165"></a>
+<ul class="xoxo blogroll">
+<li><a href="http://www.rpolillo.it/libri/il-non-profit-sul-web-indice-del-libro/" title="Di che cosa si tratta?">Di che cosa si tratta?</a></li>
+</ul>
+</div>
+		</li>
+<li id="text-4" class="widget widget_text">
+<h2 class="widgettitle">I miei ultimi Tweet</h2>			<div class="textwidget">
+<a class="twitter-timeline" href="https://twitter.com/robertopolillo" data-widget-id="347305773128372225">Tweets by @robertopolillo</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+		</li>
+<li id="linkcat-3" class="widget widget_links">
+<h2 class="widgettitle">LINK RAPIDI</h2>
+	<ul class="xoxo blogroll">
+<li><a href="http://www.disco.unimib.it" target="_blank">DISCO</a></li>
+<li><a href="http://www.thinkinnovation.org" title="Think Innovation" target="_blank">Think!</a></li>
+<li><a href="http://www.unimib.it" title="Universit&Atilde;&nbsp; di Milano Bicocca" target="_blank">UNIMIB</a></li>
+
+	</ul>
+</li>
+
+			<li id="text-5" class="widget widget_text">
+<h2 class="widgettitle">I miei ultimi Tweet</h2>			<div class="textwidget">
+<a class="twitter-timeline" href="https://twitter.com/robertopolillo" data-widget-id="347305773128372225">Tweets by @robertopolillo</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+		</li>
+<li id="text-6" class="widget widget_text">
+<h2 class="widgettitle">Il mio libro &ldquo;Il non profit sul Web&rdquo;</h2>			<div class="textwidget">
+<a href="http://www.rpolillo.it/libri/il-non-profit-sul-web-indice-del-libro/" title="Di che cosa si tratta?"><img src="http://www.rpolillo.it/wp-content/uploads/2014/05/CopertinaLibroWebPiccola-215x300.jpg" alt="Copertina Libro Il non profit sul Web" width="165"></a>
+<ul class="xoxo blogroll">
+<li><a href="http://www.rpolillo.it/libri/il-non-profit-sul-web-indice-del-libro/" title="Di che cosa si tratta?">Di che cosa si tratta?</a></li>
+</ul>
+</div>
+		</li>		</ul>
+</div>
+
+
+		</div>
+		<div id="footer">
+		  <p>
+			<br>Benvenuto al sito web di Roberto Polillo! is powered by <a href="http://wordpress.org/">WordPress</a></p>
+            <p>
+            <a href="//www.iubenda.com/privacy-policy/213916" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script></p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var _iub = _iub || [];
+	_iub.csConfiguration = {
+		cookiePolicyId: 213916,
+		siteId: 322776,
+		lang: "it"
+	};
+	(function (w, d) {
+		var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/cookie_solution/iubenda_cs.js"; tag.parentNode.insertBefore(s, tag); };
+		if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; }
+	})(window, document);
+</script><div id="translate_popup" style="display: none;">
+	<table class="translate_links"><tr>
+<td valign="top">
+		<a class="languagelink" lang="it" xml:lang="it" href="#" title="Italian"><img class="translate_flag it" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="italiano" width="16" height="11"></a>
+		<a class="languagelink" lang="af" xml:lang="af" href="#" title="Afrikaans"><img class="translate_flag af" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="Afrikaans" width="16" height="11"></a>
+		<a class="languagelink" lang="ar" xml:lang="ar" href="#" title="Arabic"><img class="translate_flag ar" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&Oslash;&sect;&Ugrave;&#132;&Oslash;&sup1;&Oslash;&plusmn;&Oslash;&uml;&Ugrave;&#138;&Oslash;&copy;" width="16" height="11"></a>
+		<a class="languagelink" lang="be" xml:lang="be" href="#" title="Belarusian"><img class="translate_flag be" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&ETH;&#145;&ETH;&micro;&ETH;&raquo;&ETH;&deg;&Ntilde;&#128;&Ntilde;&#131;&Ntilde;&#129;&ETH;&ordm;&ETH;&deg;&Ntilde;&#143;" width="16" height="11"></a>
+		<a class="languagelink" lang="bg" xml:lang="bg" href="#" title="Bulgarian"><img class="translate_flag bg" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&ETH;&plusmn;&Ntilde;&#138;&ETH;&raquo;&ETH;&sup3;&ETH;&deg;&Ntilde;&#128;&Ntilde;&#129;&ETH;&ordm;&ETH;&cedil;" width="16" height="11"></a>
+		<a class="languagelink" lang="ca" xml:lang="ca" href="#" title="Catalan"><img class="translate_flag ca" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="catal&Atilde;&nbsp;" width="16" height="11"></a>
+		<a class="languagelink" lang="cs" xml:lang="cs" href="#" title="Czech"><img class="translate_flag cs" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&Auml;&#141;esky" width="16" height="11"></a>
+		<a class="languagelink" lang="cy" xml:lang="cy" href="#" title="Welsh"><img class="translate_flag cy" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="Cymraeg" width="16" height="11"></a>
+		<a class="languagelink" lang="da" xml:lang="da" href="#" title="Danish"><img class="translate_flag da" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="dansk" width="16" height="11"></a>
+		<a class="languagelink" lang="de" xml:lang="de" href="#" title="German"><img class="translate_flag de" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="Deutsch" width="16" height="11"></a>
+		<a class="languagelink" lang="el" xml:lang="el" href="#" title="Greek"><img class="translate_flag el" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&Icirc;&micro;&Icirc;&raquo;&Icirc;&raquo;&Icirc;&middot;&Icirc;&frac12;&Icirc;&sup1;&Icirc;&ordm;&Icirc;&reg;" width="16" height="11"></a>
+		<a class="languagelink" lang="en" xml:lang="en" href="#" title="English"><img class="translate_flag en" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="English" width="16" height="11"></a>
+		<a class="languagelink" lang="es" xml:lang="es" href="#" title="Spanish"><img class="translate_flag es" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="espa&Atilde;&plusmn;ol" width="16" height="11"></a>
+		<a class="languagelink" lang="et" xml:lang="et" href="#" title="Estonian"><img class="translate_flag et" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="eesti" width="16" height="11"></a>
+		<a class="languagelink" lang="fa" xml:lang="fa" href="#" title="Persian"><img class="translate_flag fa" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&Ugrave;&#129;&Oslash;&sect;&Oslash;&plusmn;&Oslash;&sup3;&Ucirc;&#140;" width="16" height="11"></a>
+		<a class="languagelink" lang="fi" xml:lang="fi" href="#" title="Finnish"><img class="translate_flag fi" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="suomi" width="16" height="11"></a>
+		<a class="languagelink" lang="fr" xml:lang="fr" href="#" title="French"><img class="translate_flag fr" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="fran&Atilde;&sect;ais" width="16" height="11"></a>
+		<a class="languagelink" lang="ga" xml:lang="ga" href="#" title="Irish"><img class="translate_flag ga" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="Gaeilge" width="16" height="11"></a>
+	</td>
+<td valign="top">
+		<a class="languagelink" lang="gl" xml:lang="gl" href="#" title="Galician"><img class="translate_flag gl" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="galego" width="16" height="11"></a>
+		<a class="languagelink" lang="he" xml:lang="he" href="#" title="Hebrew"><img class="translate_flag he" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&times;&cent;&times;&#145;&times;&uml;&times;&#153;&times;&ordf;" width="16" height="11"></a>
+		<a class="languagelink" lang="hi" xml:lang="hi" href="#" title="Hindi"><img class="translate_flag hi" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&agrave;&curren;&sup1;&agrave;&curren;&iquest;&agrave;&curren;&uml;&agrave;&yen;&#141;&agrave;&curren;&brvbar;&agrave;&yen;&#128;" width="16" height="11"></a>
+		<a class="languagelink" lang="hr" xml:lang="hr" href="#" title="Croatian"><img class="translate_flag hr" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="hrvatski" width="16" height="11"></a>
+		<a class="languagelink" lang="hu" xml:lang="hu" href="#" title="Hungarian"><img class="translate_flag hu" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="magyar" width="16" height="11"></a>
+		<a class="languagelink" lang="id" xml:lang="id" href="#" title="Indonesian"><img class="translate_flag id" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="bahasa Indonesia" width="16" height="11"></a>
+		<a class="languagelink" lang="is" xml:lang="is" href="#" title="Icelandic"><img class="translate_flag is" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&Atilde;&shy;slenska" width="16" height="11"></a>
+		<a class="languagelink" lang="ja" xml:lang="ja" href="#" title="Japanese"><img class="translate_flag ja" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&aelig;&#151;&yen;&aelig;&#156;&not;&egrave;&ordf;&#158;" width="16" height="11"></a>
+		<a class="languagelink" lang="ko" xml:lang="ko" href="#" title="Korean"><img class="translate_flag ko" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&iacute;&#149;&#156;&ecirc;&micro;&shy;&igrave;&#150;&acute;" width="16" height="11"></a>
+		<a class="languagelink" lang="lt" xml:lang="lt" href="#" title="Lithuanian"><img class="translate_flag lt" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="lietuvi&Aring;&sup3;" width="16" height="11"></a>
+		<a class="languagelink" lang="lv" xml:lang="lv" href="#" title="Latvian"><img class="translate_flag lv" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="latvie&Aring;&iexcl;u" width="16" height="11"></a>
+		<a class="languagelink" lang="mk" xml:lang="mk" href="#" title="Macedonian"><img class="translate_flag mk" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&ETH;&frac14;&ETH;&deg;&ETH;&ordm;&ETH;&micro;&ETH;&acute;&ETH;&frac34;&ETH;&frac12;&Ntilde;&#129;&ETH;&ordm;&ETH;&cedil;" width="16" height="11"></a>
+		<a class="languagelink" lang="ms" xml:lang="ms" href="#" title="Malay"><img class="translate_flag ms" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="bahasa Melayu" width="16" height="11"></a>
+		<a class="languagelink" lang="mt" xml:lang="mt" href="#" title="Maltese"><img class="translate_flag mt" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="Malti" width="16" height="11"></a>
+		<a class="languagelink" lang="nl" xml:lang="nl" href="#" title="Dutch"><img class="translate_flag nl" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="Nederlands" width="16" height="11"></a>
+		<a class="languagelink" lang="no" xml:lang="no" href="#" title="Norwegian"><img class="translate_flag no" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="norsk" width="16" height="11"></a>
+		<a class="languagelink" lang="pl" xml:lang="pl" href="#" title="Polish"><img class="translate_flag pl" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="polski" width="16" height="11"></a>
+		<a class="languagelink" lang="pt" xml:lang="pt" href="#" title="Portuguese"><img class="translate_flag pt" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="portugu&Atilde;&ordf;s" width="16" height="11"></a>
+	</td>
+<td valign="top">
+		<a class="languagelink" lang="ro" xml:lang="ro" href="#" title="Romanian"><img class="translate_flag ro" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="rom&Atilde;&cent;n&Auml;&#131;" width="16" height="11"></a>
+		<a class="languagelink" lang="ru" xml:lang="ru" href="#" title="Russian"><img class="translate_flag ru" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&Ntilde;&#128;&Ntilde;&#131;&Ntilde;&#129;&Ntilde;&#129;&ETH;&ordm;&ETH;&cedil;&ETH;&sup1;" width="16" height="11"></a>
+		<a class="languagelink" lang="sk" xml:lang="sk" href="#" title="Slovak"><img class="translate_flag sk" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="sloven&Auml;&#141;ina" width="16" height="11"></a>
+		<a class="languagelink" lang="sl" xml:lang="sl" href="#" title="Slovenian"><img class="translate_flag sl" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="sloven&Aring;&iexcl;&Auml;&#141;ina" width="16" height="11"></a>
+		<a class="languagelink" lang="sq" xml:lang="sq" href="#" title="Albanian"><img class="translate_flag sq" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="shqipe" width="16" height="11"></a>
+		<a class="languagelink" lang="sr" xml:lang="sr" href="#" title="Serbian"><img class="translate_flag sr" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&Ntilde;&#129;&Ntilde;&#128;&ETH;&iquest;&Ntilde;&#129;&ETH;&ordm;&ETH;&cedil;" width="16" height="11"></a>
+		<a class="languagelink" lang="sv" xml:lang="sv" href="#" title="Swedish"><img class="translate_flag sv" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="svenska" width="16" height="11"></a>
+		<a class="languagelink" lang="sw" xml:lang="sw" href="#" title="Swahili"><img class="translate_flag sw" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="Kiswahili" width="16" height="11"></a>
+		<a class="languagelink" lang="th" xml:lang="th" href="#" title="Thai"><img class="translate_flag th" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&agrave;&cedil;&nbsp;&agrave;&cedil;&sup2;&agrave;&cedil;&copy;&agrave;&cedil;&sup2;&agrave;&sup1;&#132;&agrave;&cedil;&#151;&agrave;&cedil;&cent;" width="16" height="11"></a>
+		<a class="languagelink" lang="tl" xml:lang="tl" href="#" title="Filipino"><img class="translate_flag tl" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="Filipino" width="16" height="11"></a>
+		<a class="languagelink" lang="tr" xml:lang="tr" href="#" title="Turkish"><img class="translate_flag tr" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="T&Atilde;&frac14;rk&Atilde;&sect;e" width="16" height="11"></a>
+		<a class="languagelink" lang="uk" xml:lang="uk" href="#" title="Ukrainian"><img class="translate_flag uk" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&Ntilde;&#131;&ETH;&ordm;&Ntilde;&#128;&ETH;&deg;&Ntilde;&#151;&ETH;&frac12;&Ntilde;&#129;&Ntilde;&#140;&ETH;&ordm;&ETH;&deg;" width="16" height="11"></a>
+		<a class="languagelink" lang="vi" xml:lang="vi" href="#" title="Vietnamese"><img class="translate_flag vi" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="ti&aacute;&ordm;&iquest;ng Vi&aacute;&raquo;&#135;t" width="16" height="11"></a>
+		<a class="languagelink" lang="yi" xml:lang="yi" href="#" title="Yiddish"><img class="translate_flag yi" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&times;&#153;&times;&#153;&Ouml;&acute;&times;&#147;&times;&#153;&times;&copy;" width="16" height="11"></a>
+		<a class="languagelink" lang="zh-cn" xml:lang="zh-cn" href="#" title="Chinese (Simplified)"><img class="translate_flag zh-cn" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&auml;&cedil;&shy;&aelig;&#150;&#135; (&ccedil;&reg;&#128;&auml;&frac12;&#147;)" width="16" height="11"></a>
+		<a class="languagelink" lang="zh-tw" xml:lang="zh-tw" href="#" title="Chinese (Traditional)"><img class="translate_flag zh-tw" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/transparent.gif" alt="&auml;&cedil;&shy;&aelig;&#150;&#135; (&ccedil;&sup1;&#129;&eacute;&laquo;&#148;)" width="16" height="11"></a>
+		<a class="google_branding" rel="nofollow" href="http://translate.google.com/translate?sl=auto&amp;tl=it&amp;u=www.rpolillo.it/" title="translate page">powered by<img src="http://www.google.com/uds/css/small-logo.png" alt="Google" title="" width="51" height="15"></a>
+	</td>
+</tr></table>
+</div>
+
+<!-- tracker added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-15755372-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script><script type="text/javascript" src="http://www.rpolillo.it/wp-content/plugins/google-ajax-translation/jquery.translate-1.4.1.min.js?ver=1.4.1"></script><script type="text/javascript" src="http://www.rpolillo.it/wp-content/plugins/slickr-flickr/lightbox/js/jquery.lightbox-0.5.js?ver=1.27"></script><script type="text/javascript" src="http://www.rpolillo.it/wp-content/plugins/slickr-flickr/galleria/galleria.noconflict.js?ver=1.27"></script><script type="text/javascript" src="http://www.rpolillo.it/wp-content/plugins/slickr-flickr/slickr-flickr.js?ver=1.27"></script><script type="text/javascript">
+/* <![CDATA[ */
+var pbd_alp = {"startPage":"1","maxPages":"10","nextLink":"http:\/\/www.rpolillo.it\/page\/2\/"};
+/* ]]> */
+</script><script type="text/javascript" src="http://www.rpolillo.it/wp-content/plugins/pbd-ajax-load-posts/js/load-posts.js?ver=1.0"></script><script type="text/javascript" src="http://www.rpolillo.it/wp-content/plugins/bbpress/templates/default/js/editor.js?ver=2.5.7-5693"></script><script type="text/javascript">
+jQuery.noConflict(); jQuery(document).ready(function() {
+slickr_flickr_start();
+});
+</script><script>var pltNewTabURLs = ["http:\/\/rpolillo.photoshelter.com\/#!\/index"];(function(){(function(e){var t;t=e.jQueryWP||e.jQuery;return t(function(e){return typeof e.fn.on=="function"?e("body").on("click","a",function(t){var n;n=e(this);if(e.inArray(n.attr("href"),pltNewTabURLs)>-1)return n.attr("target","_blank")}):typeof console!="undefined"&&console!==null?console.log("Page Links To: Some other code has overridden the WordPress copy of jQuery. This is bad. Because of this, Page Links To cannot open links in a new window."):void 0})})(window)}).call(this);</script>
+</body>
+</html>

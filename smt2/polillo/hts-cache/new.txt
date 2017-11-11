@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+18:48:19	35/35	U--MC-	200	updated ('OK')	text/plain	date:Wed,%2027%20Jan%202016%2017:48:27%20GMT	http://www.rpolillo.it/robots.txt		(from )
+18:48:21	53854/53854	---MC-	200	added ('OK')	text/html	date:Wed,%2027%20Jan%202016%2017:48:28%20GMT	http://www.rpolillo.it/attivita-universitaria/	C:/Mie%20pagine%20Web/Polillo/index-2.html	(from )

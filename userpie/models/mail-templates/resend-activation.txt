@@ -1,0 +1,7 @@
+Ciao #USERNAME#,
+
+tu o qualcun'altro ha richiesto l'invio di un link di attivazione, usa l'indirizzo di sotto per attivare il tuo account;
+
+#ACTIVATION-URL
+
+#INC-FOOTER#

@@ -1,0 +1,8 @@
+Ciao #USERNAME#,
+
+grazie per esserti registrato al sito #WEBSITENAME#.
+
+
+#ACTIVATION-MESSAGE
+
+#INC-FOOTER#

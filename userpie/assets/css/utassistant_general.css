@@ -1,0 +1,60 @@
+.btn {margin-top:10px;} 
+
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 1px ridge #cccccc;
+}
+
+legend {
+    width: inherit;
+    padding: 0 10px;
+    border: none;
+}
+
+.floatbutton{
+    float: right;
+}
+
+.fixbutton {
+    margin-top: 0px;
+}
+
+.character_fix {
+    font-size: 15px;
+}
+
+/**
+  PILL
+*/
+.ut-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: default;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.ut-pill-active {
+    background-color: #64ccff ;
+    color: #ffffff;
+    cursor: default;
+}
+
+.ut-pill-inactive {
+    background-color: #ffffff;
+    color: #AAAAAA;
+    cursor: default;
+}
